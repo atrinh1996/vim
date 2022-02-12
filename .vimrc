@@ -2,12 +2,19 @@
 " Author: Amy Bui
 " Last Edit Date: 2/11/2022
 
-syntax on		" highlight syntax
-set number		" show line numbers
+syntax on		        " highlight syntax
+" colorscheme default    " syntax highlighting color scheme
+set number		    " show line numbers
 set noswapfile		" disable the swapfile
 set hlsearch		" highlight all results
 set ignorecase		" ignorecase in a search (case-insensitive)
 set incsearch		" show search results as you type (incremental search results)
+
+" show all white space characters
+" set syntax=whitespace
+" set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+" set list
+" set nolist    " to hide nonvisible characters
 
 " remap the leader to be ''' (apostrophe), to the right of 'l'
 let mapleader = "'"
@@ -40,12 +47,12 @@ set autoindent
 
 
 "
-" Syntax configs
+" SYNTAX CONFIG
 "
 
 " auto close matching braces; if you want the mapping, Crtl+v before typing
 " open brace.
-inoremap " ""<left>
+" inoremap " ""<left>
 " inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
